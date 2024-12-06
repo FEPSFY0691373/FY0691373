@@ -149,11 +149,13 @@
           decreases the radius this is what causes a spiral inward with the final point being beyond the event horizon and eventually leading to the
           singularity. The movie accurately depicts this process as Coop enters the gravitational field of the black hole, he gets caught in the 
           swirling accretion disk before he falls past it into the singularity. 
+       
           When a black hole is eating a star the centripetal acceleration of the matter is close to c, this means that due to the temperature of the 
           star as it speeds up, the emissions should appear a blue colour on the visible light spectrum as the wavelengths are stretched out. This 
           blue light would be visible in the accretion disk and as there is only white light in the CGI image, we can suggest it hasn’t consumed 
           anything in years and is therefore colder than expected. This means Gargantua is portrayed as hotter than other black holes like M87*
           - the accretion disk surrounding it is a red/orange suggesting it is cooler.
+       
           As the accretion disk is so vast something the movie has incorrect is that Miller’s planet, the planet featured in figure 1, as it would 
           be closer too if not in the accretion disk. This would affect a lot of the movie’s plot on the planet as the path entry and exit would 
           require a slingshot around another body, as well as the visual aspect on the planet changing as the majority of the sky should covered by
@@ -178,6 +180,7 @@
           Singularities are the centre of a black hole at which all the mass is concentrated and so the force of gravity is so strong it destroys our
           concept of spacetime. Once Cooper travels into the singularity there are three main plot lines that do not obey the laws of physics. 
           Firstly, anything that enters a black hole never leaves it and the movie suggests that there is a possibility someone could enter and exit one.
+     
           However, this point is considered for the data TARS tries to transmit out of the black hole, the waves cannot get past the event horizon and
           infinitely bounce around inside the black hole, this would occur. Next there is the issue of spaghettification, as a singularity is a dense 
           concentration of mass the tidal gravitational forces felt by everything around it stretches all matter in the direction of the black hole 
@@ -322,14 +325,13 @@
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const AbstractCount = displayWordCount("Abstract");
     const IntroductionCount = displayWordCount("Introduction");
     const BlackHoleCount = displayWordCount("Black Holes");
     const AccretionDisksCount = displayWordCount("Accretion Disks");
     const SingularitiesCount = displayWordCount("Singularities");
     const ConclusionCount = displayWordCount("Conclusion");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount + BlackHoleCount + AccretionDisksCount + SingularitiesCount + ConclusionCount;
+    const totalWordCount = IntroductionCount + BlackHoleCount + AccretionDisksCount + SingularitiesCount + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
