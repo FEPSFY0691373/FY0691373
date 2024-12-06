@@ -137,10 +137,10 @@
     }  
     </style>
      </head>
-       
         <style>
       .myslides {display:none}
     </style>
+    <hr>
     <h3 id="Accretion Disks">Accretion Disks</h3>
     <p class="ex4">
       <pre>
@@ -171,7 +171,7 @@
       .myslides {display:none}
     </style>
     <hr>
-     <h3 id="Singularities">Singularities</h3>
+    <h3 id="Singularities">Singularities</h3>
     <p class="ex5">
     <pre>
           The final major change made in the movie compared to what would occur in real life is the way in which Cooper goes into and out of Gargantua.
@@ -196,7 +196,7 @@
       .myslides {display:none}
     </style>
     <hr>
-     <h3 id="Conclusion">Conclusion</h3>
+    <h3 id="Conclusion">Conclusion</h3>
     <p class="ex6">
     <pre>
           Interstellar presents black holes not as a mystery we don’t fully understand but as a beautiful creation we should be invested in. The 
@@ -218,10 +218,9 @@
       .myslides {display:none}
     </style>
     <hr>
-     <h3 id="References">References</h3>
+    <h3 id="References">References</h3>
     <p class="ex7">
     <pre>  
-     
       Prescod-Weinstein C., What happens at a black holes edge? It depends on your perspective (2024). Available at: 
       https://www.newscientist.com/article/mg26335010-100-what-happens-at-a-black-holes-edge-it-depends-on-your-perspective/ (2.11.24)
 
@@ -323,10 +322,14 @@
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
+    const AbstractCount = displayWordCount("Abstract");
+    const IntroductionCount = displayWordCount("Introduction");
+    const BlackHoleCount = displayWordCount("Black Holes");
+    const AccretionDisksCount = displayWordCount("Accretion Disks");
+    const SingularitiesCount = displayWordCount("Singularities");
+    const ConclusionCount = displayWordCount("Conclusion");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount + AnalysisCount + BlackHoleCount + AccretionDisksCount + SingularitiesCount + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
